@@ -1,5 +1,7 @@
 #!/bin/bash
 
+apt-get install gpg
+
 mkdir -p /usr/share/keyrings
 
 rm -f /usr/share/keyrings/gocontroll.gpg || true
