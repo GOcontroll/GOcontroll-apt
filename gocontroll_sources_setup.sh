@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt-get install gpg
+apt-get install -y gpg
 
 mkdir -p /usr/share/keyrings
 
