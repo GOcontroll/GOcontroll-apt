@@ -11,6 +11,6 @@ curl -fsSL http://server.gocontroll.com/gpg-pubkey.asc | gpg --dearmor -o /usr/s
 
 chmod 644 /usr/share/keyrings/gocontroll.gpg
 
-echo "deb [signed-by=/usr/share/keyrings/gocontroll.gpg] http://server.gocontroll.com/ bookworm main" | tee /etc/apt/sources.list.d/gocontroll.list > /dev/null
+echo "deb [signed-by=/usr/share/keyrings/gocontroll.gpg] http://server.gocontroll.com:8080/ trixie main" | tee /etc/apt/sources.list.d/gocontroll.list > /dev/null
 
 apt-get update -y
